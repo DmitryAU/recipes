@@ -1,38 +1,95 @@
+video {
+    object-fit: cover;
+    width: 100%; /*vh*/
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
 .App {
-  text-align: center;
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    display: flex;
+    justify-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.search {
+    width: 100%;
+    padding: 12px 54px;
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 18px;
+    color: white;
+    margin-left: -60px;
+    box-shadow: inset 0px 0px 0px 4px #ddd6e8;
+    border-radius: 5px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn {
+    background: none;
+    border: none;
+    margin-top: 10px;
+    cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.conty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.icon {
+width: 20px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2, ul, p {
+    font-family: 'Raleway', sans-serif;
+}
+
+ul {
+    list-style: none; 
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+}
+
+li {
+    display: block;
+    padding: .4em .4em .4em .8em;
+    margin: 0 0 .5em 0;
+}
+
+.tasty {
+    width: 300px;
+    border: 10px;
+    border-radius: 12px;
+    border-color: grey;
+    color: black;
+}
+
+.co {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 400px;
+    border-radius: 15px;
+}
+
+.co:hover {
+scale: 115%;
+transition-duration: .5s;
+background: rgba(255, 255, 255, 0.9);
 }
